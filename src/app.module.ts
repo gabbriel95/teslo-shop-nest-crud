@@ -7,7 +7,7 @@ import { SeedModule } from './seed/seed.module';
 import { FilesModule } from './files/files.module';
 import { ServeStaticModule } from '@nestjs/serve-static';
 import { join } from 'path';
-import { PersonsModule } from './persons/persons.module';
+import { AuthModule } from './auth/auth.module';
 
 @Module({
   imports: [
@@ -29,7 +29,7 @@ import { PersonsModule } from './persons/persons.module';
     CommonModule,
     SeedModule,
     FilesModule,
-    PersonsModule,
+    AuthModule,
   ],
 })
 export class AppModule {}
