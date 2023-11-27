@@ -26,5 +26,6 @@ export class MessagesWsService {
   @SubscribeMessage('message-from-client')
   onMessageFromClient(client: Socket, payload: any) {
     console.log(client.id, payload);
+    console.log('hol');
   }
 }
