@@ -9,7 +9,7 @@ export class PaginationDto {
   })
   @IsOptional()
   @IsPositive()
-  @Type(() => Number) //enableImplicitConversions: true
+  @Type(() => Number) //enableImplicitConversions: true porque estan llegando como strings
   limit?: number;
 
   @ApiProperty({
